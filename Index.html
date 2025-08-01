@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>📝 Mis Tareas de Hoy</title>
+  <link rel="stylesheet" href="./tarea.css">
+</head>
+<body>
+  <h1>📝 Tareas de Hoy</h1>
+  <h4> “Hazlo hoy, hazlo bien. Toma el control de tu tiempo.”</h4>
+  <p class="fecha" id="fecha"></p>
+
+  <div class="formulario">
+    <input type="text" id="nuevaTarea" placeholder="¿Qué tarea vas a hacer?">
+    <input type="time" id="horaTarea" step="60">
+    <div class="texto-ayuda" id="errorHora"></div>
+    <div style="color:#f7f0f0; font-size:12px; margin-bottom:10px;">
+      *Hora en formato 24 hrs (ejemplo: 14:30 = 2:30 PM)
+    </div>
+    <button onclick="agregarTarea()">Agregar tarea</button>
+  </div>
+
+  <div class="filtros">
+    <button onclick="filtrarTareas('todas')">Todas</button>
+    <button onclick="filtrarTareas('pendientes')">Pendientes</button>
+    <button onclick="filtrarTareas('hechas')">Hechas</button>
+  </div>
+
+  <div id="listaTareas"></div>
+
+  <footer>
+  <strong>Creado por C. Dominguez Gnz – © 2025</strong><br>
+   el 30 de Julio 2025 || <span id="fechaCreacion"></span><br>
+    <p> 🧠Objetos, Métodos, Eventos, LocalStorage y Responsive Design </p>
+  </footer>
+
+  <audio id="alarma" src="https://www.myinstants.com/es/instant/tono-de-llamada-remix-49624/?utm_source=copy&utm_medium=share"></audio>
+
+  <script src="tarea.js">
+  
+</script>
+</body>
+</html>
